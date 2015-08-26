@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DBA17EF08A31701F70A54DA /* ea_test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CD31F0C5250F46F01C732110 /* libPods-EdgeAnimateView-iOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88E7D98019CF0CE1AB286A7 /* libPods-EdgeAnimateView-iOS_Example.a */; };
 		E73B11C9E9541E955D910E3B /* libPods-EdgeAnimateView-iOS_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191B961A4061E4EA953194FD /* libPods-EdgeAnimateView-iOS_Tests.a */; };
+		FAEA65261B8E16940059EA0E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA65251B8E16940059EA0E /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +40,11 @@
 /* Begin PBXFileReference section */
 		191B961A4061E4EA953194FD /* libPods-EdgeAnimateView-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EdgeAnimateView-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B661C558EB427D57EBAC46 /* Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdgeAnimateView-iOS_Tests/Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ea_test.bundle; sourceTree = "<group>"; };
 		2F256324E499F031882B619E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		337C549887974AE2808DFBF9 /* Pods-EdgeAnimateView-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdgeAnimateView-iOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdgeAnimateView-iOS_Example/Pods-EdgeAnimateView-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EB67637588AE28BDC9A032F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* EdgeAnimateView-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "EdgeAnimateView-iOS.app"; path = "EdgeAnimateView-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* EdgeAnimateView-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EdgeAnimateView-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -54,7 +57,7 @@
 		6003F5A5195388D20070C39A /* EAVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAVViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* EAVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAVViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = "EdgeAnimateView-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* EdgeAnimateView-iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EdgeAnimateView-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		9CEDC353BCD33039CDFE9535 /* Pods-EdgeAnimateView-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdgeAnimateView-iOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdgeAnimateView-iOS_Tests/Pods-EdgeAnimateView-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A049CCD4F8FEE6B7BD7C905A /* EdgeAnimateView-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "EdgeAnimateView-iOS.podspec"; path = "../EdgeAnimateView-iOS.podspec"; sourceTree = "<group>"; };
 		E88E7D98019CF0CE1AB286A7 /* libPods-EdgeAnimateView-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EdgeAnimateView-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA65251B8E16940059EA0E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEA65261B8E16940059EA0E /* WebKit.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -93,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DBA1E39A32E8B5C0E386A33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +121,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* EdgeAnimateView-iOS.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* EdgeAnimateView-iOS_Example.app */,
+				6003F5AE195388D20070C39A /* EdgeAnimateView-iOS_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +130,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAEA65251B8E16940059EA0E /* WebKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -137,6 +151,7 @@
 				6003F5A6195388D20070C39A /* EAVViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				2DBA1E39A32E8B5C0E386A33 /* Resources */,
 			);
 			name = "Example for EdgeAnimateView-iOS";
 			path = "EdgeAnimateView-iOS";
@@ -212,7 +227,7 @@
 			);
 			name = "EdgeAnimateView-iOS_Example";
 			productName = "EdgeAnimateView-iOS";
-			productReference = 6003F58A195388D20070C39A /* EdgeAnimateView-iOS.app */;
+			productReference = 6003F58A195388D20070C39A /* EdgeAnimateView-iOS_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* EdgeAnimateView-iOS_Tests */ = {
@@ -232,7 +247,7 @@
 			);
 			name = "EdgeAnimateView-iOS_Tests";
 			productName = "EdgeAnimateView-iOSTests";
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* EdgeAnimateView-iOS_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -277,6 +292,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				2DBA17EF08A31701F70A54DA /* ea_test.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

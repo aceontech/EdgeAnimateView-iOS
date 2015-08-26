@@ -6,24 +6,29 @@
 //  Copyright (c) 2015 Alex Manarpies. All rights reserved.
 //
 
+#import <EdgeAnimateView.h>
+#import <UIView+AOTToolkitAdditions.h>
+
 #import "EAVViewController.h"
 
 @interface EAVViewController ()
-
+@property(nonatomic, strong) EdgeAnimateView *edgeAnimateView;
 @end
 
 @implementation EAVViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.edgeAnimateView = [[EdgeAnimateView alloc] init];
+    [self.edgeAnimateView loadEdgeAnimateBundleName:@"ea_test"];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+    [self.view addSubviewOnce:self.edgeAnimateView];
+    self.edgeAnimateView.frame = self.view.bounds;
 }
 
 @end
