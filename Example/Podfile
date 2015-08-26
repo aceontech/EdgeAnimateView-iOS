@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'EdgeAnimateView-iOS_Example', :exclusive => true do
+  pod "EdgeAnimateView-iOS", :path => "../"
+end
+
+target 'EdgeAnimateView-iOS_Tests', :exclusive => true do
+  pod "EdgeAnimateView-iOS", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
