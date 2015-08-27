@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/aceontech/EdgeAnimateView-iOS"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://github.com/aceontech/EdgeAnimateView-iOS/raw/master/demo.gif"
   s.license          = 'MIT'
   s.author           = { "Alex Manarpies" => "alex@manarpies.com" }
   s.source           = { :git => "https://github.com/aceontech/EdgeAnimateView-iOS.git", :tag => s.version.to_s }
