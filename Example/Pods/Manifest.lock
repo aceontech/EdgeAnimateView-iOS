@@ -1,15 +1,17 @@
 PODS:
   - AOTToolkit/UI (0.2.0)
-  - EdgeAnimateView-iOS (0.1.0)
+  - EdgeAnimateView-iOS (1.0.0):
+    - AOTToolkit/UI (~> 0.2.0)
+    - POViewFrameBuilder (~> 1.0.0)
   - Expecta (1.0.2)
   - POViewFrameBuilder (1.0.2)
   - Specta (1.0.3)
 
 DEPENDENCIES:
-  - AOTToolkit/UI
+  - AOTToolkit/UI (~> 0.2.0)
   - EdgeAnimateView-iOS (from `../`)
   - Expecta
-  - POViewFrameBuilder
+  - POViewFrameBuilder (~> 1.0.0)
   - Specta
 
 EXTERNAL SOURCES:
@@ -18,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AOTToolkit: 30e15fa4896804dfd6d25df131f84b4cacb333de
-  EdgeAnimateView-iOS: 249e59cc0a1a5274617e5d2a795e7d0204a83db1
+  EdgeAnimateView-iOS: c8147b0d75f4071573ae1d94de7e9daec6b53ffb
   Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   POViewFrameBuilder: c1ae02fb610dc4e1a1cf6eee547a2f8d145cba50
   Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234

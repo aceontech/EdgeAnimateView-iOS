@@ -32,7 +32,7 @@ SOFTWARE.
 
 ## EdgeAnimateView-iOS
 
-Copyright (c) 2015 Alex Manarpies <alex@manarpies.com>
+Copyright (c) 2015 Alex Manarpies <www.aceontech.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

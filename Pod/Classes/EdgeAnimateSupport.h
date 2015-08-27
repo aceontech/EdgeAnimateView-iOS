@@ -12,4 +12,6 @@
 
 - (void)loadEdgeAnimateBundle:(NSBundle *)bundle compositionName:(NSString *)compositionName;
 
+- (void)loadEdgeAnimateURL:(NSURL*)url;
+
 @end

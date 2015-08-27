@@ -49,4 +49,8 @@
     [self.animationView loadEdgeAnimateBundle:bundle compositionName:compositionName];
 }
 
+- (void)loadEdgeAnimateURL:(NSURL *)url {
+    [self.animationView loadEdgeAnimateURL:url];
+}
+
 @end

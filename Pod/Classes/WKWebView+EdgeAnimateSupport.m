@@ -16,6 +16,34 @@
 }
 
 - (void)loadEdgeAnimateBundle:(NSBundle *)bundle compositionName:(NSString *)compositionName {
+    [self configureOnce];
+
+    // Workaround for iOS 8 bug in WKWebView local file loading.
+    // Files need to be served from /tmp/www
+    if ([EdgeAnimateVersionHelper systemVersionLessThan:@"9"]) {
+        NSLog(@"Using iOS 8 WKWebView workaround");
+        NSString *copiedBundlePath = [self copyBundleToTmpWww:bundle];
+        bundle = [NSBundle bundleWithPath:copiedBundlePath];
+    }
+
+    // Build request
+    NSString *path = [bundle pathForResource:compositionName ofType:@"html"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+    [self loadRequest:request];
+}
+
+- (void)loadEdgeAnimateURL:(NSURL *)url {
+    [self configureOnce];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self loadRequest:request];
+}
+
+#pragma mark - Internal
+
+- (void)configureOnce {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // Script disables scaling/zooming
@@ -35,24 +63,7 @@ head.appendChild(meta);";
         // Disable scrolling
         self.scrollView.scrollEnabled = NO;
     });
-
-    // Workaround for iOS 8 bug in WKWebView local file loading.
-    // Files need to be served from /tmp/www
-    if ([EdgeAnimateVersionHelper systemVersionLessThan:@"9"]) {
-        NSLog(@"Using iOS 8 WKWebView workaround");
-        NSString *copiedBundlePath = [self copyBundleToTmpWww:bundle];
-        bundle = [NSBundle bundleWithPath:copiedBundlePath];
-    }
-
-    // Build request
-    NSString *path = [bundle pathForResource:compositionName ofType:@"html"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-
-    [self loadRequest:request];
 }
-
-#pragma mark - Internal
 
 - (NSString *)copyBundleToTmpWww:(NSBundle *)bundle {
     NSFileManager *manager = [NSFileManager defaultManager];

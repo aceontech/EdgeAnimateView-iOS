@@ -13,17 +13,30 @@
 }
 
 - (void)loadEdgeAnimateBundle:(NSBundle *)bundle compositionName:(NSString *)compositionName {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        // Disable scrolling
-        self.scrollView.scrollEnabled = NO;
-    });
+    [self configureOnce];
 
     NSString *path = [bundle pathForResource:compositionName ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     [self loadRequest:request];
+}
+
+- (void)loadEdgeAnimateURL:(NSURL *)url {
+    [self configureOnce];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self loadRequest:request];
+}
+
+#pragma mark - Internal
+
+- (void)configureOnce {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // Disable scrolling
+        self.scrollView.scrollEnabled = NO;
+    });
 }
 
 @end

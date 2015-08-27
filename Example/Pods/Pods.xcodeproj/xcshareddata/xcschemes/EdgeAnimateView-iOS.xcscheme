@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "59F9F42606EF1F5A368A94AF4CBAA9BC"
+               BlueprintIdentifier = "16ED7F2A499E00A70D0C9715F6BF8363"
                BuildableName = "libEdgeAnimateView-iOS.a"
                BlueprintName = "EdgeAnimateView-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">

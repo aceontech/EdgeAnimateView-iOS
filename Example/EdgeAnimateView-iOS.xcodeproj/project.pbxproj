@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DBA17EF08A31701F70A54DA /* ea_test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */; };
+		2DBA1EC2E4A53157AE859A24 /* ea_test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA1B30AA0A218890343D17 /* ea_test.bundle */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		191B961A4061E4EA953194FD /* libPods-EdgeAnimateView-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EdgeAnimateView-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B661C558EB427D57EBAC46 /* Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdgeAnimateView-iOS_Tests/Pods-EdgeAnimateView-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ea_test.bundle; sourceTree = "<group>"; };
+		2DBA1B30AA0A218890343D17 /* ea_test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ea_test.bundle; sourceTree = "<group>"; };
 		2F256324E499F031882B619E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		337C549887974AE2808DFBF9 /* Pods-EdgeAnimateView-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdgeAnimateView-iOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdgeAnimateView-iOS_Example/Pods-EdgeAnimateView-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EB67637588AE28BDC9A032F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		2DBA1E39A32E8B5C0E386A33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2DBA1717D352DFF9B32F6A8A /* ea_test.bundle */,
+				2DBA1B30AA0A218890343D17 /* ea_test.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				2DBA17EF08A31701F70A54DA /* ea_test.bundle in Resources */,
+				2DBA1EC2E4A53157AE859A24 /* ea_test.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

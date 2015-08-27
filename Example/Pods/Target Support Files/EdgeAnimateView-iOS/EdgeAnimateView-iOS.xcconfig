@@ -1,0 +1,1 @@
+EDGEANIMATEVIEW_IOS_OTHER_LDFLAGS = -weak_framework "WebKit"

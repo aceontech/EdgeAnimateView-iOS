@@ -10,12 +10,6 @@ Pod::Spec.new do |s|
   s.name             = "EdgeAnimateView-iOS"
   s.version          = "1.0.0"
   s.summary          = "EdgeAnimateView displays Adobe Edge Animate animations in a WKWebView or a UIWebView depending on the target OS."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                         EdgeAnimateView provides one-liner support for displaying Adobe Edge Animate compositions on iOS devices.
                         Depending on the target OS (iOS 7, 8 or 9), EdgeAnimateView will pick the right web view and configure it
