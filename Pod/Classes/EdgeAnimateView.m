@@ -4,7 +4,7 @@
 //
 
 #import <WebKit/WebKit.h>
-#import <UIView+AOTToolkitAdditions.h>
+#import "UIView+AOTToolkitAdditions.h"
 
 #import "EdgeAnimateView.h"
 

@@ -22,7 +22,7 @@ pod "EdgeAnimateView-iOS"
 
 ## Author
 
-Alex Manarpies, alex@manarpies.com
+Alex Manarpies, [aceontech.com](http://www.aceontech.com)
 
 ## License
 

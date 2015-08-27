@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "EdgeAnimateView-iOS"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of EdgeAnimateView-iOS."
+  s.version          = "1.0.0"
+  s.summary          = "EdgeAnimateView displays Adobe Edge Animate animations in a WKWebView or a UIWebView depending on the target OS."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        EdgeAnimateView provides one-liner support for displaying Adobe Edge Animate compositions on iOS devices.
+                        Depending on the target OS (iOS 7, 8 or 9), EdgeAnimateView will pick the right web view and configure it
+                        for you. In iOS versions 8 and up, WKWebView is used, which provides native Safari web performance
+                        for your animations.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/EdgeAnimateView-iOS"
+  s.homepage         = "https://github.com/aceontech/EdgeAnimateView-iOS"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Alex Manarpies" => "alex@manarpies.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/EdgeAnimateView-iOS.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/aceontech/EdgeAnimateView-iOS.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/aceontech'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -36,5 +40,9 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AOTToolkit/UI', '~> 0.2.0'
+  s.dependency 'POViewFrameBuilder', '~> 1.0.0'
+
+  s.weak_framework = 'WebKit'
+
 end

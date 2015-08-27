@@ -3,8 +3,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'EdgeAnimateView-iOS_Example', :exclusive => true do
   pod "EdgeAnimateView-iOS", :path => "../"
 
-  pod 'POViewFrameBuilder'
-  pod 'AOTToolkit/UI'
+  pod 'POViewFrameBuilder', '~> 1.0.0'
+  pod 'AOTToolkit/UI', '~> 0.2.0'
 end
 
 target 'EdgeAnimateView-iOS_Tests', :exclusive => true do
