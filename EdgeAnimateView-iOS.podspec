@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EdgeAnimateView-iOS"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "EdgeAnimateView displays Adobe Edge Animate animations in a WKWebView or a UIWebView depending on the target OS."
   s.description      = <<-DESC
                         EdgeAnimateView provides one-liner support for displaying Adobe Edge Animate compositions on iOS devices.
@@ -35,7 +35,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AOTToolkit/UI', '~> 0.2.0'
-  s.dependency 'POViewFrameBuilder', '~> 1.0.0'
 
   s.weak_framework = 'WebKit'
 
