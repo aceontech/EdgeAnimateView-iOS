@@ -5,8 +5,15 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+* Adds support for loading embedded NSBundles.
+*/
 @interface NSBundle (EdgeAnimateSupport)
 
-+ (NSBundle *)eas_bundleNamed:(NSString *)name ;
+/**
+* Loads an embedded NSBundle from the app bundle by name.
+* @param name The bundle name.
+*/
++ (NSBundle *)eas_bundleNamed:(NSString *)name;
 
 @end

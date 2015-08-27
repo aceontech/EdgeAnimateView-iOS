@@ -8,5 +8,8 @@
 
 #import "EdgeAnimateSupport.h"
 
+/**
+* Adds Edge Animate support to WKWebView.
+*/
 @interface WKWebView (EdgeAnimateSupport) <EdgeAnimateSupport>
 @end

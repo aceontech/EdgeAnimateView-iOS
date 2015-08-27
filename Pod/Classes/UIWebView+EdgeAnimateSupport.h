@@ -6,5 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "EdgeAnimateSupport.h"
 
+/**
+* Adds Edge Animate support to UIWebView.
+*/
 @interface UIWebView (EdgeAnimateSupport) <EdgeAnimateSupport>
 @end

@@ -6,12 +6,27 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WKWebView.h>
 
+/**
+* Defines the contract for Edge Animate supporting classes.
+*/
 @protocol EdgeAnimateSupport <NSObject>
 
+/**
+* Loads an Edge Animate bundle by name.
+* This method assumes the containing html file has the same name as the the bundle.
+* @param bundleName The bundle name
+*/
 - (void)loadEdgeAnimateBundleName:(NSString *)bundleName;
 
+/**
+* Loads an Edge Animate bundle instance directly.
+* @param compositionName The name of the html file containing the animation.
+*/
 - (void)loadEdgeAnimateBundle:(NSBundle *)bundle compositionName:(NSString *)compositionName;
 
-- (void)loadEdgeAnimateURL:(NSURL*)url;
+/**
+* Loads an animation from a remote URL directly.
+*/
+- (void)loadEdgeAnimateURL:(NSURL *)url;
 
 @end

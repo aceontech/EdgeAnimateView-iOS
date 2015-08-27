@@ -8,5 +8,11 @@
 
 #import "EdgeAnimateSupport.h"
 
+/**
+* EdgeAnimateView is a wrapper view which selects the best type of web view for the target iOS it's running on.
+*
+* iOS 7: UIWebView
+* iOS 8 and 9: WKWebView (WebKit.framework)
+*/
 @interface EdgeAnimateView : UIView <EdgeAnimateSupport>
 @end

@@ -7,6 +7,10 @@
 
 @interface EdgeAnimateVersionHelper : NSObject
 
+/**
+* Checks whether the iOS system version is lower a given version string
+* @param versionString The version string, e.g. @"9.0"
+*/
 + (BOOL)systemVersionLessThan:(NSString *)versionString;
 
 @end
