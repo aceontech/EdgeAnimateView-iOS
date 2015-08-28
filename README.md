@@ -13,6 +13,11 @@ performance for your animations.
 
 ![demo](demo.gif)
 
+Features:
+
+* Local and remote loading of Adobe Edge Animate animations
+* String localization support [new since 1.1]
+
 ## Installation
 
 EdgeAnimateView-iOS is available through [CocoaPods](http://cocoapods.org). To install

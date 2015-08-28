@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EdgeAnimateView-iOS"
-  s.version          = "1.0.2"
+  s.version          = "1.1.0"
   s.summary          = "EdgeAnimateView displays Adobe Edge Animate animations in a WKWebView or a UIWebView depending on the target OS."
   s.description      = <<-DESC
                         EdgeAnimateView provides one-liner support for displaying Adobe Edge Animate compositions on iOS devices.
