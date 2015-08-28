@@ -1,6 +1,6 @@
 # EdgeAnimateView-iOS
 
-[![CI Status](http://img.shields.io/travis/Alex Manarpies/EdgeAnimateView-iOS.svg?style=flat)](https://travis-ci.org/Alex Manarpies/EdgeAnimateView-iOS)
+[![CI Status](http://img.shields.io/travis/aceontech/EdgeAnimateView-iOS.svg?style=flat)](https://travis-ci.org/aceontech/EdgeAnimateView-iOS)
 [![Version](https://img.shields.io/cocoapods/v/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
 [![License](https://img.shields.io/cocoapods/l/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
 [![Platform](https://img.shields.io/cocoapods/p/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
