@@ -36,6 +36,8 @@
 		2949C5C2AEE2DC4E62E8C543B3C4EBF5 /* NSBundle+EdgeAnimateSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B43F7794C328C0A3CECA7164610B52 /* NSBundle+EdgeAnimateSupport.m */; };
 		2ABE43AFC8264F76042D781839ACAC15 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D760E8AF5A2B5E090F52697F10DE11B /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2AE3A831E0760A32EBC6A6084DE3BCF7 /* UIView+AOTToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C350EEE86B292E176E76321A4D13C48 /* UIView+AOTToolkitAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DBA133689C1B322ADF8122B /* EdgeAnimateLanguageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA121BA71695D463DF5EBA /* EdgeAnimateLanguageHelper.h */; };
+		2DBA1C90AF7B764EA5B321E3 /* EdgeAnimateLanguageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA19EFBBF64208A568DC16 /* EdgeAnimateLanguageHelper.m */; };
 		375455323364CB86E8BF2065915822B4 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = B45A9D7CF98FA3CFCA280F34FD819836 /* EXPMatchers+beIdenticalTo.h */; };
 		3892C0737A9333B20B3582DDA0C32F5F /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B51C10609C56D4CE68C77691BACD9F41 /* EXPMatchers+beInstanceOf.h */; };
 		3A7C3EC8F401D28E577042DA4E3669F2 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = E95E17A28853ECE361BF73C7CD8AC10B /* EXPExpect.h */; };
@@ -261,6 +263,8 @@
 		2CB09D5959F464CEAB6C13885539C755 /* EdgeAnimateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EdgeAnimateView.h; sourceTree = "<group>"; };
 		2D760E8AF5A2B5E090F52697F10DE11B /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
 		2D948288F6DFAE79E1C46EAA92F4C869 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		2DBA121BA71695D463DF5EBA /* EdgeAnimateLanguageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeAnimateLanguageHelper.h; sourceTree = "<group>"; };
+		2DBA19EFBBF64208A568DC16 /* EdgeAnimateLanguageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeAnimateLanguageHelper.m; sourceTree = "<group>"; };
 		2E0972B324512C0AF8A17EFDCFE6369F /* POViewFrameBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "POViewFrameBuilder-prefix.pch"; sourceTree = "<group>"; };
 		2F2E8F2202D4A0449322DD7248666EE9 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
 		2F6BF0FA33DCD47C82CBEF6504809BEE /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
@@ -808,6 +812,8 @@
 				C9F2B8BB461A48ED504B5F0CCCE785AA /* UIWebView+EdgeAnimateSupport.m */,
 				39BA1AF8312D7376B8B8FC6B873F67D6 /* WKWebView+EdgeAnimateSupport.h */,
 				99470152D4520DB8BC866A7671641583 /* WKWebView+EdgeAnimateSupport.m */,
+				2DBA19EFBBF64208A568DC16 /* EdgeAnimateLanguageHelper.m */,
+				2DBA121BA71695D463DF5EBA /* EdgeAnimateLanguageHelper.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -858,6 +864,7 @@
 				8DFD0DA93C42C76FF9D07862D3B50737 /* NSBundle+EdgeAnimateSupport.h in Headers */,
 				8251F1F5FA5764B2B7F44CE5D0841C5A /* UIWebView+EdgeAnimateSupport.h in Headers */,
 				45ACDF08931D9FC090E4FD634C3F2753 /* WKWebView+EdgeAnimateSupport.h in Headers */,
+				2DBA133689C1B322ADF8122B /* EdgeAnimateLanguageHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,6 +1228,7 @@
 				2949C5C2AEE2DC4E62E8C543B3C4EBF5 /* NSBundle+EdgeAnimateSupport.m in Sources */,
 				7B828C044CEFBF0A5224A95E2F88AD92 /* UIWebView+EdgeAnimateSupport.m in Sources */,
 				537648A4F64AB5F91A8B6E0E029D20E4 /* WKWebView+EdgeAnimateSupport.m in Sources */,
+				2DBA1C90AF7B764EA5B321E3 /* EdgeAnimateLanguageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

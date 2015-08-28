@@ -4,6 +4,9 @@ EdgeAnimateView will pick the right web view and configure it for you. On iOS
 versions 8 and up, WKWebView is used, which provides native Safari web
 performance for your animations.
 
+#### 1.1.0
+* Adds string localization support.
+
 #### 1.0.2
 * Adds some documentation
 

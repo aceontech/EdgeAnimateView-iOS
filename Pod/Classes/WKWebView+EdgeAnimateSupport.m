@@ -8,6 +8,7 @@
 #import "WKWebView+EdgeAnimateSupport.h"
 #import "NSBundle+EdgeAnimateSupport.h"
 #import "EdgeAnimateVersionHelper.h"
+#import "EdgeAnimateLanguageHelper.h"
 
 @implementation WKWebView (EdgeAnimateSupport)
 
@@ -46,18 +47,25 @@
 - (void)configureOnce {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        // Script disables scaling/zooming
-        NSString *source = @"var meta = document.createElement('meta'); \
-meta.name = 'viewport'; \
-meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'; \
-var head = document.getElementsByTagName('head')[0];\
-head.appendChild(meta);";
-        WKUserScript *script = [[WKUserScript alloc] initWithSource:source injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-
-        // Add scripts to the web view
         if (self.configuration.userContentController == nil) {
             self.configuration.userContentController = [[WKUserContentController alloc] init];
         }
+
+        NSString *source;
+        WKUserScript *script;
+
+        // Disables scaling/zooming script
+        source = @"var meta = document.createElement('meta'); \
+    meta.name = 'viewport'; \
+    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'; \
+    var head = document.getElementsByTagName('head')[0];\
+    head.appendChild(meta);";
+        script = [[WKUserScript alloc] initWithSource:source injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+        [self.configuration.userContentController addUserScript:script];
+
+        // Inject current iOS language into HTML
+        source = [NSString stringWithFormat:@"var localizationLanguage = '%@';", [EdgeAnimateLanguageHelper currentLanguage]];
+        script = [[WKUserScript alloc] initWithSource:source injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
         [self.configuration.userContentController addUserScript:script];
 
         // Disable scrolling
