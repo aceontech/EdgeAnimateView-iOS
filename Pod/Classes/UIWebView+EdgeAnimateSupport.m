@@ -5,6 +5,7 @@
 
 #import "UIWebView+EdgeAnimateSupport.h"
 #import "NSBundle+EdgeAnimateSupport.h"
+#import "EdgeAnimateLanguageHelper.h"
 
 @implementation UIWebView (EdgeAnimateSupport)
 
@@ -20,6 +21,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     [self loadRequest:request];
+    [self injectLocalizationVariable];
 }
 
 - (void)loadEdgeAnimateURL:(NSURL *)url {
@@ -27,6 +29,7 @@
 
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self loadRequest:request];
+    [self injectLocalizationVariable];
 }
 
 #pragma mark - Internal
@@ -37,6 +40,11 @@
         // Disable scrolling
         self.scrollView.scrollEnabled = NO;
     });
+}
+
+-(void)injectLocalizationVariable {
+    NSString *source = [NSString stringWithFormat:@"var localizationLanguage = '%@';", [EdgeAnimateLanguageHelper currentLanguage]];
+    [self stringByEvaluatingJavaScriptFromString:source];
 }
 
 @end
