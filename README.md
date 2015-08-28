@@ -1,6 +1,6 @@
 # EdgeAnimateView-iOS
 
-[![CI Status](http://img.shields.io/travis/Alex Manarpies/EdgeAnimateView-iOS.svg?style=flat)](https://travis-ci.org/Alex Manarpies/EdgeAnimateView-iOS)
+[![CI Status](http://img.shields.io/travis/aceontech/EdgeAnimateView-iOS.svg?style=flat)](https://travis-ci.org/aceontech/EdgeAnimateView-iOS)
 [![Version](https://img.shields.io/cocoapods/v/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
 [![License](https://img.shields.io/cocoapods/l/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
 [![Platform](https://img.shields.io/cocoapods/p/EdgeAnimateView-iOS.svg?style=flat)](http://cocoapods.org/pods/EdgeAnimateView-iOS)
@@ -103,6 +103,8 @@ you can right-click it and select **"Show package contents"**.
 An example file structure:
 
 ![bundle structure](bundle-structure.png)
+
+You can always see what a working file structure looks like [here](https://github.com/aceontech/EdgeAnimateView-iOS/tree/master/Example/EdgeAnimateView-iOS/Resources/ea_test.bundle).
 
 ### 4. Add to your Xcode project
 
