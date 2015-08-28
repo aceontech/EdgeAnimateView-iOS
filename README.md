@@ -99,6 +99,8 @@ An example file structure:
 
 ![bundle structure](bundle-structure.png)
 
+You can always see what a working file structure looks like [here](https://github.com/aceontech/EdgeAnimateView-iOS/tree/master/Example/EdgeAnimateView-iOS/Resources/ea_test.bundle).
+
 ### 4. Add to your Xcode project
 
 #### Using Xcode
