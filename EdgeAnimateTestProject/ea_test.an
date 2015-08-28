@@ -64,6 +64,10 @@
 			"timelineColor3":"0x5b6c4d",
 			"animationEnabled":"true",
 			"timelineColor":"0x91c767"},
+		"element_${Language}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad"},
 		"element_${CircleButton2}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
@@ -129,8 +133,8 @@
 			"timelineColor":"0x00a096"}},
 	"PubWebAudioUri":".",
 	"stage-Default Timeline_mark_ms":"-1",
-	"nextElementColorIndex":"6",
-	"stage-Default Timeline_playhead_ms":"3468",
+	"nextElementColorIndex":"7",
+	"stage-Default Timeline_playhead_ms":"0",
 	"usedBOM":"false",
 	"StageZoomFactor":"100",
 	"PubWebImagesUri":"."}

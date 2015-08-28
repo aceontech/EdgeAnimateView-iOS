@@ -19,6 +19,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
+      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+         sym.$("Language").html(localizationLanguage)
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

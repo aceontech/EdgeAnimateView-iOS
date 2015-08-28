@@ -63,6 +63,15 @@
                             type: 'rect',
                             rect: ['95px', '440px', 'undefined', 'undefined', 'auto', 'auto'],
                             transform: [[],[],[],['0.45627','0.45627']]
+                        },
+                        {
+                            id: 'Language',
+                            type: 'text',
+                            rect: ['15px', '729px', 'auto', 'auto', 'auto', 'auto'],
+                            text: "<p style=\"margin: 0px;\">​Language</p>",
+                            align: "center",
+                            font: ['Arial, Helvetica, sans-serif', [24, "px"], "rgba(0,0,0,1.00)", "400", "none", "normal", "break-word", "nowrap"],
+                            textStyle: ["", "", "", "", "none"]
                         }
                     ],
                     style: {
