@@ -17,6 +17,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
+      
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -33,10 +35,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${Group}", "touchstart", function(sym, e) {
-         // insert code to be run when a user touches the object (for touch devices only)
-         sym.stop();
-         
+      
+
+      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+         localizeText(sym, "Tap");
 
       });
       //Edge binding end

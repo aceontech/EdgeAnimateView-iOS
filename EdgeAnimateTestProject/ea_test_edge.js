@@ -16,6 +16,8 @@
         resources = [
         ],
         scripts = [
+            js+"strings.js",
+            js+"localizeText.js"
         ],
         symbols = {
             "stage": {
@@ -31,7 +33,8 @@
                             id: 'CircleButton',
                             symbolName: 'CircleButton',
                             type: 'rect',
-                            rect: ['378', '250', '267', '267', 'auto', 'auto']
+                            rect: ['378', '250', '267', '267', 'auto', 'auto'],
+                            userClass: ""
                         },
                         {
                             id: 'CircleButton3',
@@ -93,28 +96,22 @@
                 content: {
                     dom: [
                         {
-                            id: 'Group',
-                            type: 'group',
-                            rect: ['0px', '0', '267', '267', 'auto', 'auto'],
-                            c: [
-                            {
-                                rect: ['0px', '0px', '267px', '267px', 'auto', 'auto'],
-                                borderRadius: ['50%', '50%', '50%', '50%'],
-                                id: 'Ellipse',
-                                stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                                type: 'ellipse',
-                                fill: ['rgba(205,48,48,1.00)']
-                            },
-                            {
-                                textStyle: ['', '', '', '', 'none'],
-                                rect: ['113px', '120px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                align: 'left',
-                                id: 'Text2',
-                                opacity: '1',
-                                text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(255, 255, 255);\">Tap</span></p>',
-                                type: 'text'
-                            }]
+                            rect: ['0px', '0px', '267px', '267px', 'auto', 'auto'],
+                            borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'Ellipse',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'ellipse',
+                            fill: ['rgba(205,48,48,1.00)']
+                        },
+                        {
+                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['0px', '120px', '267px', '28px', 'auto', 'auto'],
+                            font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(255,255,255,1)', '400', 'none', 'normal', 'break-word', ''],
+                            align: 'center',
+                            id: 'Tap',
+                            opacity: '1',
+                            text: '<p style=\"margin: 0px;\">​Tap</p>',
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -137,16 +134,6 @@
                             "${Ellipse}",
                             '0px',
                             '0px'
-                        ],
-                        [
-                            "eid56",
-                            "top",
-                            2115,
-                            0,
-                            "easeInQuad",
-                            "${Text2}",
-                            '120px',
-                            '120px'
                         ],
                         [
                             "eid43",
@@ -189,59 +176,29 @@
                             '1'
                         ],
                         [
-                            "eid96",
-                            "left",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${Text2}",
-                            '113px',
-                            '113px'
-                        ],
-                        [
-                            "eid52",
-                            "left",
-                            2115,
-                            0,
-                            "easeInQuad",
-                            "${Text2}",
-                            '113px',
-                            '103px'
-                        ],
-                        [
-                            "eid61",
+                            "eid101",
                             "opacity",
                             0,
                             1000,
                             "easeInQuad",
-                            "${Text2}",
+                            "${Tap}",
                             '1',
-                            '0.08104674796748'
+                            '0.13112931910569'
                         ],
                         [
-                            "eid62",
+                            "eid102",
                             "opacity",
                             1000,
                             1000,
                             "easeInQuad",
-                            "${Text2}",
-                            '0.08104699850082397',
+                            "${Tap}",
+                            '0.131129',
                             '1'
                         ],
                         [
                             "eid57",
                             "top",
                             0,
-                            0,
-                            "easeInQuad",
-                            "${Ellipse}",
-                            '0px',
-                            '0px'
-                        ],
-                        [
-                            "eid58",
-                            "top",
-                            2115,
                             0,
                             "easeInQuad",
                             "${Ellipse}",
